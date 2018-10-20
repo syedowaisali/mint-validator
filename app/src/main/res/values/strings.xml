@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Mint Validator</string>
+
+    <string name="full_name_empty_error">Full Name cannot be empty</string>
+    <string name="full_name_min_chr_length">Full Name should be 3 character long.</string>
+    <string name="full_name_max_chr_length">Maximum 20 characters are allowed in full name</string>
+
+    <string name="email_empty_error">Email cannot be empty</string>
+    <string name="email_invalid">Invalid email</string>
+
+    <string name="pass_empty_error">Password cannot be empty</string>
+    <string name="pass_min_length_error">Password should be 6 character long</string>
+
+    <string name="confirm_pass_not_match_error">Confirm password doesn\'t match</string>
+
+    <string name="mobile_number_empty_error">Mobile Number cannot be empty</string>
+    <string name="mobile_number_invalid">Mobile number should be start +92</string>
+
+    <string name="terms_error">Agree terms and conditions</string>
+
+</resources>
