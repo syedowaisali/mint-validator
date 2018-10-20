@@ -1,1 +1,1 @@
-# mint-validator
+# Mint Validator
