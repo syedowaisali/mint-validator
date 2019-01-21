@@ -97,7 +97,7 @@ for gradle versions **below 4.0** use:
 ``` 
 
 Other annotaions available:
-- `@LengthRange` : defines length
+- `@LengthRange` : defines length range, with minumum value and a maximum value.
 - `@ConfirmPassword` : Compares the text in this EditText with specified EditText to confirm password entry.
 
 
