@@ -49,17 +49,17 @@ for gradle versions **below 4.0** use:
     private EditText passwordEditText;
 ```    
 
-- @BindView is must to use these validations, see [ViewBinder](https://github.com/syedowaisali/mint-view-binder) library for more.
+- `@BindView` is must to use these validations, see [ViewBinder](https://github.com/syedowaisali/mint-view-binder) library for more.
 
 - Top level Order annotation describe which EditText will be validated in order number you provide, here, emailEditText will be verified first then passwordEditText.
 
-- ValidEmail runs email regex on input, "message" variable in annotation takes a message string resource, which will be shown when validation fails.
+- `@ValidEmail` runs email regex on input, `message` variable in annotation takes a message string resource, which will be shown when validation fails.
 
-- "order" variable in annotation sets in which order annotations on a view will be validated. If a view like email has multiple validations, this order will be used to describe in which sequence these validations will be executed on that single view.
+- `order` variable in annotation sets in which order annotations on a view will be validated. If a view like email has multiple validations, this order will be used to describe in which sequence these validations will be executed on that single view.
 
-- "value" variable in annotation will describe any value if the given annotation needs anything, like MinLength will specify minimum length in this variable, similarly max length will specify maximum length in integer.
+- `value` variable in annotation will describe any value if the given annotation needs anything, like MinLength will specify minimum length in this variable, similarly max length will specify maximum length in integer.
 
-- Use @Regex annotation to provide your own regex implementation.
+- Use `@Regex` annotation to provide your own regex implementation.
 
 - **To start validating you must call following methods**
 ```     
@@ -91,6 +91,10 @@ for gradle versions **below 4.0** use:
     
     );
 ``` 
+
+Other annotaions available:
+- `@LengthRange` : defines length
+- `@ConfirmPassword` : Compares the text in this EditText with specified EditText to confirm password entry.
 
 
 
