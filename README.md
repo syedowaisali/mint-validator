@@ -51,15 +51,19 @@ for gradle versions **below 4.0** use:
 
 - `@BindView` is must to use these validations, see [ViewBinder](https://github.com/syedowaisali/mint-view-binder) library for more.
 
-- Top level Order annotation describe which EditText will be validated in order number you provide, here, emailEditText will be verified first then passwordEditText.
+- Top level `@Order` annotation describe which EditText will be validated in order number you provide, here, emailEditText will be verified first then passwordEditText.
 
 - `@ValidEmail` runs email regex on input, `message` variable in annotation takes a message string resource, which will be shown when validation fails.
 
-- `order` variable in annotation sets in which order annotations on a view will be validated. If a view like email has multiple validations, this order will be used to describe in which sequence these validations will be executed on that single view.
-
-- `value` variable in annotation will describe any value if the given annotation needs anything, like MinLength will specify minimum length in this variable, similarly max length will specify maximum length in integer.
+- `@NotEmpty` checks  EditText shoud not be empty.
 
 - Use `@Regex` annotation to provide your own regex implementation.
+
+- `order` variable in annotation sets in which order annotations on a view will be validated. If a view like email has multiple validations, this order will be used to describe in which sequence these validations will be executed on that single view.
+
+- `value` variable in annotation will describe any value if the given annotation needs anything, like `@MinLength` will specify minimum length in this variable, similarly `@MaxLength` will specify maximum length in integer.
+
+
 
 - **To start validating you must call following methods**
 ```     
